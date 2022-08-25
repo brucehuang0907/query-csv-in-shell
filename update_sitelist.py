@@ -9,7 +9,7 @@ if __name__=="__main__":
         file_path = input('Please input the file path of trt export CSV file, default fold is ~/Downloads/:')
 
     if "/" not in file_path:
-        file = f'/Users/huahuang/Downloads/{file_path}'
+        file = f'~/Downloads/{file_path}'
     else:
         file = file_path
     df = pd.read_csv(file,usecols=['site_code','subnet','id','system_name','it_function','country'])
